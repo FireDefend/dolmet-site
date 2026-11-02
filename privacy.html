@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>随口译 / Dolmet 隐私政策 · Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --bg:#fff; --muted:#6e6e73; --accent:#0b7f75; --line:#e5e5ea; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --bg:#000; --muted:#a1a1a6; --accent:#3fc9bc; --line:#2c2c2e; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font: 17px/1.6 -apple-system, "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; } h2 { font-size: 22px; margin: 40px 0 8px; border-top: 1px solid var(--line); padding-top: 24px; }
+  h3 { font-size: 17px; margin: 24px 0 4px; } p, li { margin: 6px 0; } .muted { color: var(--muted); font-size: 15px; }
+  nav a { color: var(--accent); text-decoration: none; margin-right: 16px; } a { color: var(--accent); }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">随口译 / Dolmet</a><a href="#zh">中文</a><a href="#en">English</a></nav>
+
+<h1 id="zh">随口译 隐私政策</h1>
+<p class="muted">生效日期：2026-11-01 · 适用于 随口译（Dolmet）iOS 应用 1.0 及以后版本</p>
+<p>随口译（以下简称"本应用"）是一款完全离线的翻译应用。我们的原则很简单：<strong>你说的话、你输入的文字，都只留在你的 iPhone 上。</strong>正常使用时本应用不收集任何数据；唯一的例外是你<strong>主动</strong>使用"反馈问题"功能（第 5 条）。</p>
+
+<h3>1. 我们不收集任何数据</h3>
+<p>本应用不收集、不存储、不上传任何个人信息或使用数据。没有账号，没有广告，没有数据统计或自动崩溃上报，不使用任何第三方分析 SDK。</p>
+
+<h3>2. 语音与文字如何处理</h3>
+<ul>
+<li>对话模式使用 iOS 系统内置的语音识别在设备上把语音转成文字；翻译由本应用内置的翻译模型在设备上完成。音频不会被保存或发送到任何服务器。</li>
+<li>对话记录只保存在内存中，不写入磁盘；清空记录或关闭应用后即消失。</li>
+<li>文字模式输入的文字同样只在设备上翻译，不会上传。</li>
+</ul>
+
+<h3>3. 哪些操作会联网</h3>
+<p>本应用只在以下情况使用网络，均由你主动触发：</p>
+<ul>
+<li><strong>下载翻译模型</strong>：模型文件从 Hugging Face（huggingface.co）下载。这是普通的文件请求，Hugging Face 作为文件托管方可能按其自身隐私政策记录访问信息（例如 IP 地址）；本应用不会在请求中附加任何标识信息。</li>
+<li><strong>下载系统语音识别资源</strong>：由 iOS 向 Apple 下载，受 Apple 的隐私政策约束。</li>
+<li><strong>发送反馈</strong>：见第 5 条。</li>
+</ul>
+<p>模型下载完成后，本应用的全部翻译功能都可在飞行模式下使用。</p>
+
+<h3>4. 权限</h3>
+<ul>
+<li><strong>麦克风</strong>：仅用于对话模式的实时识别；只在对话页处于"监听"状态时打开，暂停或离开页面即关闭。</li>
+<li>本应用不请求位置、通讯录、照片、相机或任何其他权限。</li>
+</ul>
+
+<h3>5. 反馈问题（可选，只有你点按"发送"才会发出）</h3>
+<p>当你认为某句话识别错了或翻译得不好，可以在菜单里点"反馈问题"。本应用会先告诉你将包含哪些内容，由你逐项勾选，再点"发送"。可能包含：</p>
+<ul>
+<li><strong>录音</strong>（默认关闭，需要你在设置里打开"反馈时附带录音"）：最近约 2 分钟的麦克风音频，只在你点按发送时才从内存缓冲区取出；不发送则随时丢弃，从不写入磁盘。</li>
+<li><strong>对话文本</strong>：本次对话的识别文字和译文，以及你选择的语言对。</li>
+<li><strong>日志与诊断信息</strong>：机型、iOS 版本、应用版本、所用模型、识别与翻译的耗时与错误代码、内存占用等技术数据；不含对话内容。</li>
+<li><strong>系统诊断报告</strong>：iOS 提供的崩溃或卡顿诊断（如有）。</li>
+<li><strong>你填写的说明</strong>（可选）。</li>
+</ul>
+<p><strong>我们如何处理反馈数据</strong></p>
+<ul>
+<li>用途仅限于改进识别与翻译质量、修复缺陷。</li>
+<li><strong>不与身份关联</strong>：反馈不包含你的姓名、账号、邮箱、位置或联系方式；我们不会尝试把反馈与任何个人对应起来。反馈带有一个随机生成的<strong>匿名安装 ID</strong>（卸载重装即变），只用于把同一台设备的多条反馈归到一起。请注意，录音本身可能包含你或对方的声音与对话内容，发送前请确认对方同意。</li>
+<li><strong>传输与存储</strong>：通过你的 iCloud 账户、经 Apple CloudKit 加密传输并存储在开发者的 CloudKit 数据库中；只有你本人和开发者能读取，其他用户不能。未登录 iCloud 或没有网络时，应用会改为打开系统分享面板，由你自己选择如何发送。</li>
+<li><strong>不用于追踪</strong>：反馈数据不与第三方共享，不用于广告或跨应用追踪。</li>
+<li><strong>保留期限</strong>：最多保留 90 天，分析后删除；如你在说明中留下联系方式并要求删除，我们会在 30 天内删除。</li>
+</ul>
+
+<h3>6. 儿童</h3>
+<p>本应用不面向 13 岁以下儿童收集信息。</p>
+
+<h3>7. 变更</h3>
+<p>隐私政策如有变更，会在应用更新说明和本页面公布。</p>
+
+<h3>8. 联系方式</h3>
+<p>如有疑问，请联系：<a href="mailto:sunxigeng@gmail.com">sunxigeng@gmail.com</a></p>
+
+<h2 id="en">Dolmet Privacy Policy</h2>
+<p class="muted">Effective: 2026-11-01 · Applies to the Dolmet (随口译) iOS app, version 1.0 and later</p>
+<p>Dolmet ("the app") is a translator that works entirely offline. Our principle is simple: <strong>what you say and what you type stays on your iPhone.</strong> In normal use the app collects no data. The only exception is when you <strong>choose</strong> to use the "Report a problem" feature (section 5).</p>
+
+<h3>1. We collect no data</h3>
+<p>The app does not collect, store or transmit any personal information or usage data. There is no account, no advertising, no analytics or automatic crash reporting, and no third-party SDK.</p>
+
+<h3>2. How speech and text are processed</h3>
+<ul>
+<li>Conversation mode uses the speech recognition built into iOS to transcribe speech on the device; translation is done on the device by the translation model bundled with the app. Audio is never saved or sent to any server.</li>
+<li>Conversation transcripts are kept in memory only, never written to disk, and disappear when you clear them or close the app.</li>
+<li>Text you type in Text mode is likewise translated on the device and never uploaded.</li>
+</ul>
+
+<h3>3. When the app uses the network</h3>
+<p>The app uses the network only in the situations below, each started by you:</p>
+<ul>
+<li><strong>Downloading translation models</strong>: model files are downloaded from Hugging Face (huggingface.co). This is an ordinary file download; as the file host, Hugging Face may log access information (such as your IP address) under its own privacy policy. The app attaches no identifying information to the request.</li>
+<li><strong>Downloading the system's speech recognition assets</strong>: performed by iOS from Apple and covered by Apple's privacy policy.</li>
+<li><strong>Sending feedback</strong>: see section 5.</li>
+</ul>
+<p>Once the models are downloaded, every translation feature works in Airplane Mode.</p>
+
+<h3>4. Permissions</h3>
+<ul>
+<li><strong>Microphone</strong>: used only for live recognition in Conversation mode; it is on only while the Conversation tab is in the "Listening" state, and off as soon as you pause or leave the tab.</li>
+<li>The app does not request location, contacts, photos, camera or any other permission.</li>
+</ul>
+
+<h3>5. Report a problem (optional, sent only when you tap "Send")</h3>
+<p>If a sentence was misheard or badly translated, you can choose "Report a problem" from the menu. The app first shows you exactly what will be included, lets you untick any item, and sends only when you tap "Send". The report may include:</p>
+<ul>
+<li><strong>Audio</strong> (off by default; you must enable "Keep audio for reports" in settings): about the last 2 minutes of microphone audio, taken from an in-memory buffer only at the moment you send; otherwise it is discarded continuously and never written to disk.</li>
+<li><strong>Conversation text</strong>: the recognized text and translations of the current conversation and the language pair you selected.</li>
+<li><strong>Logs and diagnostics</strong>: device model, iOS version, app version, model in use, recognition and translation timings and error codes, memory use and similar technical data; no conversation content.</li>
+<li><strong>System diagnostic reports</strong>: crash or hang diagnostics provided by iOS, if any.</li>
+<li><strong>Your note</strong> (optional).</li>
+</ul>
+<p><strong>How feedback data is handled</strong></p>
+<ul>
+<li>Used only to improve recognition and translation quality and to fix defects.</li>
+<li><strong>Not linked to your identity</strong>: feedback contains no name, account, email, location or contact details, and we do not attempt to associate it with any person. It carries a randomly generated <strong>anonymous install ID</strong> (it changes if you reinstall), used only to group reports from the same device. Note that the audio itself may contain your voice, the other person's voice and the content of your conversation; please make sure the other person agrees before sending.</li>
+<li><strong>Transmission and storage</strong>: sent through your iCloud account via Apple CloudKit, encrypted in transit, and stored in the developer's CloudKit database; only you and the developer can read it, never other users. Without an iCloud account or a network connection, the app opens the system share sheet instead so you choose how to send it.</li>
+<li><strong>Not used for tracking</strong>: feedback is not shared with third parties and is not used for advertising or cross-app tracking.</li>
+<li><strong>Retention</strong>: kept for at most 90 days and deleted after analysis; if you include contact details in your note and ask for deletion, we delete it within 30 days.</li>
+</ul>
+
+<h3>6. Children</h3>
+<p>The app does not collect information from children under 13.</p>
+
+<h3>7. Changes</h3>
+<p>Changes to this policy will be announced in the app's release notes and on this page.</p>
+
+<h3>8. Contact</h3>
+<p>Questions: <a href="mailto:sunxigeng@gmail.com">sunxigeng@gmail.com</a></p>
+</main>
+</body>
+</html>
